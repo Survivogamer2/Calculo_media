@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class CalcNota {
+
+	public static void main(String[] args) {
+ Scanner sc=new Scanner(System.in);
+ 
+ Estudante estudante= new Estudante();
+ System.out.println("Insira o nome do aluno");
+ estudante.name= sc.nextLine();
+ System.out.println("Insira a nota 1 do aluno (Obs: De 0 a 100)");
+ estudante.n1=sc.nextDouble();
+ System.out.println("Insira a nota 2 do aluno (Obs: De 0 a 100)");
+ estudante.n2=sc.nextDouble();
+ System.out.println("Insira a nota 3 do aluno (Obs: De 0 a 100)");
+ estudante.n3=sc.nextDouble();
+
+		 System.out.printf("nota final %.2f%n",estudante.Media());
+ if (estudante.Media( )< 60.0){
+	 System.out.println("REPROVADO");
+ System.out.printf("Faltou para a media %.2f%n",estudante.FaltaMedia());
+ }
+ else
+	 System.out.println("APROVADO");
+ 
+
+ sc.close();
+	}
+
+}

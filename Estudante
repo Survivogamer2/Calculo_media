@@ -1,0 +1,28 @@
+
+public class Estudante {
+
+public String name;
+public double n1;
+public double n2;
+public double n3;
+ 
+ public double CalcNota() {
+	 return n1+n2+n3;
+		 
+ }
+ public double Media() {
+	 
+		return CalcNota()/3;
+	
+		
+		}
+	 public double FaltaMedia() {
+			if (Media()<60.0) {
+				return 60.0-Media();
+			}
+				else {
+					return 0;
+				}
+ }
+	
+}
